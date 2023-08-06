@@ -1,0 +1,162 @@
+<!doctype ><html  lang="en"><head><title>LEAVE</title>
+	   <meta charset="utf-8">
+	   <meta http-equiv="">
+	   <meta name="viewport" content="user-scalable=no,width=device-width"/>
+	   <script type="text/javascript" src="manipulation.js"></script>
+
+	</head>
+	
+
+	<style>
+		
+		
+		@media screen and (max-width: 1680px) {
+
+			body, input, select, textarea {
+				font-size: 13pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			body, input, select, textarea {
+				font-size: 11pt;
+				letter-spacing: 0.0375em;
+			}
+
+		}
+	.body{
+		font-family: Lucida Console", "Courier New", monospace;
+		font-weight: 300;
+		font-size: 15pt;
+		line-height: 0.75em;
+		color: #0000FF;
+		background-color:#000000;
+		
+	  }
+
+    .form1{
+ 	
+ 	color:#000080;
+ 	border: 2px solid red;
+    border-radius: 35px
+
+
+    }
+    .fields11{
+    	
+
+         border-radius: 17px;
+		 border: 2px solid red;
+		 padding: 12px;
+		
+		
+
+    }
+    .fields {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			width: calc(100% + -0.7em);
+			margin: -0.1em 0 2em -0.2em;
+			
+			border: 2px solid red;
+            border-radius: 17px
+		}
+		
+	.bvid{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: -1;
+
+	}
+	@media (min-aspect-ratio: 16/9){
+		.bvid{
+			width: 100%;
+			height: auto;
+		}
+
+
+	}
+	@media (max-aspect-ratio: 16/9){
+		.bvid{
+			width: auto;
+			height: 100%;
+		}
+
+
+	}
+	
+
+	</style>
+
+
+	<body class="body"><br>
+		<video autoplay loop muted plays-inline class="bvid"><source src="C:\Users\tlomatsg\Documents\AA-Lion\backgroud.mp4" type="video/mp4"></video>
+		
+		<h1>YOUR APPLICATION</h1><br><br>
+
+			<fieldset class="form1">
+				<legend align="left" style="text-transform: uppercase;font-size:1.5em">Application Results</legend><br>
+					<label >First and Last name:</label><br><br>
+					<input type="answer" class="fields11" size="31" id="flNameR" name="flNameR" value="" class="form-control" placeholder=""><br><br><br>
+					<label > Start Date :</label><br><br>
+					<input type="answer" class="fields11" size="31" id="sDateR" name="sDateR" value="" class="form-control" placeholder="0"><br><br>
+					<label > End Date :</label><br><br>
+					<input type="answer" class="fields11" size="31" id="eDateR" name="eDateR" value="" class="form-control" placeholder="0"><br><br><br>
+					<label >Leave Type:</label><br><br>
+					<input type="answer" class="fields11" size="31" id="Ltype" name="Ltype" value="" class="form-control" placeholder=""><br><br><br>
+					
+					<label>Reason :</label><br><br>
+					<textarea type="answer" class="fields" id="studQueryR" name="studQueryR" placeholder="" value="" rows="7"></textarea><br><br><br><br>
+					
+
+			</fieldset><br><br>
+
+
+
+
+
+		<script >
+			const text1=localStorage.getItem('date11');
+			const text2=localStorage.getItem('date12');
+			const text3=localStorage.getItem('date13');
+			const text4=localStorage.getItem('date14');
+			const text5=localStorage.getItem('date15');
+
+
+
+
+
+
+
+			document.getElementById("flNameR").value=text3;
+			document.getElementById("sDateR").value=text1;
+			document.getElementById("eDateR").value=text2;
+			document.getElementById("Ltype").value=text4;
+			document.getElementById("studQueryR").value=text5;
+
+
+
+
+		</script>
+
+	</body
+	
+</html>
+
